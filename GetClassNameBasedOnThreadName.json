@@ -1,0 +1,8 @@
+{
+"query": {
+	"match" : {
+		"THREADNAME" :""
+	}
+},
+"_source": [ "CLASSNAME"]
+}

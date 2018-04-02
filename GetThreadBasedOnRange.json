@@ -1,0 +1,13 @@
+{
+    "query": {
+        "range" : {
+            "timestamp": {
+                "gte": "",
+                "lte": "",
+				"format": "dd-MM-yyyy"
+            }
+        }
+    },
+	"size":100,
+    "_source" : ["THREADNAME","message"]
+}

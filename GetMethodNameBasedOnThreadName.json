@@ -1,0 +1,9 @@
+{
+    "query": {
+        "match" : {
+            "THREADNAME" : ""
+        }
+    },
+	
+    "_source": [ "METHODNAME"]
+}

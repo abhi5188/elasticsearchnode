@@ -1,0 +1,17 @@
+{
+  "name": "elasticsearchnode",
+  "version": "1.0.0",
+  "description": "This is a nodejs application to dynamically trigger elasticsearch queries",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha -t 10000 D:/elasticsearchnode/testCases/*.test.js",
+    "test-watch":"nodemon --exec \"npm test\""
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Abhishek Singh",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

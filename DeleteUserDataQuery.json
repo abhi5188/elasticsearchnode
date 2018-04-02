@@ -1,0 +1,9 @@
+{
+   "query": {
+		"bool": {
+		"should": [
+			{ "match": { "id": 3   }}
+		]
+		}
+	}
+}

@@ -1,0 +1,11 @@
+	{  
+		"size": 0,
+		"aggs": {
+			"distinct_threads": {
+			"terms": {
+				"field": "THREADNAME.keyword",
+				"size": 100
+			}
+			}
+		}
+     }

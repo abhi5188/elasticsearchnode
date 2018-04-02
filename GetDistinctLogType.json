@@ -1,0 +1,11 @@
+{
+  "size": 0,
+  "aggs": {
+    "distinct_logtype": {
+      "terms": {
+        "field": "LOGTYPE.keyword",
+        "size": 100
+      }
+    }
+  }
+}

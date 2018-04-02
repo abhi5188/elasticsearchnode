@@ -1,0 +1,11 @@
+{
+	"id": 3,
+	"username": "abhis",
+	"password": "abhi",
+	"name": "abhis",
+	"email": "abhis@intellect.com",
+	"is_active": "true",
+	"created_on": "",
+	"updated_on": "",
+	"location": "Thane"
+}
