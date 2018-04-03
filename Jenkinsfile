@@ -29,7 +29,7 @@ node('master') {
             
        stage('Start ElasticSerach'){
                 
-          bat 'D:\elk\elasticsearch-6.2.2\bin\elasticsearch.bat -d'     
+          bat 'D:\\elk\\elasticsearch-6.2.2\\bin\\elasticsearch.bat -d'     
        }             
 
        stage('Checkout'){
