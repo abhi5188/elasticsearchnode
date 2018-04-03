@@ -41,7 +41,7 @@ node('master') {
          bat 'node -v'
          bat 'npm prune'
          bat 'npm install'
-         bat 'npm test'
+         bat 'npm test &'
 
        }
 
