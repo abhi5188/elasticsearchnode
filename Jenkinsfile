@@ -22,14 +22,14 @@ THE SOFTWARE.
 
 node('master') {
 
-        
+    properties(
+            [
+                pipelineTriggers([cron('* * * * *')])
+            ]
+        )    
     currentBuild.result = "SUCCESS"
 
     try {
-            
-       pipelineTriggers {
-        pollSCM '* */1 * * *'
-       }     
             
        /*stage('Start ElasticSerach'){
                 
