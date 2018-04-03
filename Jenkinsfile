@@ -42,6 +42,7 @@ node('master') {
          bat 'npm prune'
          bat 'npm install'
          bat 'npm test &'
+         bat npm install MOCHA_FILE=./jenkins-test-results.xml ./node_modules/.bin/mocha tests/** --reporter mocha-junit-reporter      
 
        }
 
