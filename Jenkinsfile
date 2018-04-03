@@ -22,11 +22,8 @@ THE SOFTWARE.
 
 node('master') {
 
-    properties(
-            [
-                pipelineTriggers([cron('* * * * *')])
-            ]
-        )    
+    properties([pipelineTriggers([pollSCM('* */1 * * *')])])
+        
     currentBuild.result = "SUCCESS"
 
     try {
