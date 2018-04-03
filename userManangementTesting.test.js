@@ -15,7 +15,7 @@ it('should return the list of users', (done) =>{
 
 });
 
-it('getUserList should return the reponse status as 200', (done) =>{
+/*it('getUserList should return the reponse status as 200', (done) =>{
 
     request(app)
     .get('/getUserList')
@@ -100,7 +100,7 @@ it('updateUserData should return the reponse status as 200', (done) =>{
         done();
     });
 
-});
+});*/
 
 
 });
