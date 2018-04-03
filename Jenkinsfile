@@ -73,9 +73,9 @@ node('master') {
 
          echo 'prune and cleanup'
          bat 'npm prune'
-         /*bat 'rmdir node_modules /s || Y'
+         bat 'rmdir node_modules /s /q || Y'
 
-         mail body: 'project build successful',
+         /*mail body: 'project build successful',
                      from: 'xxxx@yyyyy.com',
                      replyTo: 'xxxx@yyyy.com',
                      subject: 'project build successful',
