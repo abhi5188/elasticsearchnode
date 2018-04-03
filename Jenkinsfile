@@ -38,14 +38,14 @@ node('master') {
 
          print "Environment will be : ${env.NODE_ENV}"
 
-         sh 'node -v'
-         sh 'npm prune'
-         sh 'npm install'
-         sh 'npm test'
+         bat 'node -v'
+         bat 'npm prune'
+         bat 'npm install'
+         bat 'npm test'
 
        }
 
-       stage('Build Docker'){
+       /*stage('Build Docker'){
 
             sh './dockerBuild.sh'
        }
@@ -58,7 +58,7 @@ node('master') {
          echo 'ssh to web server and tell it to pull new image'
          sh 'ssh deploy@xxxxx.xxxxx.com running/xxxxxxx/dockerRun.sh'
 
-       }
+       }*/
 
        stage('Cleanup'){
 
