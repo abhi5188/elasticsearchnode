@@ -63,14 +63,14 @@ node('master') {
        stage('Cleanup'){
 
          echo 'prune and cleanup'
-         sh 'npm prune'
-         sh 'rm node_modules -rf'
+         bat 'npm prune'
+         bat 'rm node_modules -rf'
 
-         mail body: 'project build successful',
+         /*mail body: 'project build successful',
                      from: 'xxxx@yyyyy.com',
                      replyTo: 'xxxx@yyyy.com',
                      subject: 'project build successful',
-                     to: 'yyyyy@yyyy.com'
+                     to: 'yyyyy@yyyy.com'*/
        }
 
 
@@ -80,11 +80,11 @@ node('master') {
 
         currentBuild.result = "FAILURE"
 
-            mail body: "project build error is here: ${env.BUILD_URL}" ,
+            /*mail body: "project build error is here: ${env.BUILD_URL}" ,
             from: 'xxxx@yyyy.com',
             replyTo: 'yyyy@yyyy.com',
             subject: 'project build failed',
-            to: 'zzzz@yyyyy.com'
+            to: 'zzzz@yyyyy.com'*/
 
         throw err
     }
