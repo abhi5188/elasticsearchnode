@@ -22,10 +22,14 @@ THE SOFTWARE.
 
 node('master') {
 
-
+        
     currentBuild.result = "SUCCESS"
 
     try {
+            
+       triggers {
+        pollSCM '* */1 * * *'
+       }     
             
        /*stage('Start ElasticSerach'){
                 
