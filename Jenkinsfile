@@ -27,7 +27,7 @@ node('master') {
 
     try {
             
-       triggers {
+       pipelineTriggers {
         pollSCM '* */1 * * *'
        }     
             
