@@ -78,8 +78,47 @@ node('master') {
                      subject: 'project build successful',
                      to: 'yyyyy@yyyy.com'*/
        }
-
-
+            
+       stage('Smoke Test: Dev Environment') {
+            steps {
+                echo "Smoke Testing on Development Environment"
+		    }
+        }
+		stage('Deploy on QA : Websphere Server') {
+            steps {
+                echo "QA Tests on IBM WAS"
+		    }
+        }
+		stage('Smoke Test: Selenium : QA Environment') {
+            steps {
+                echo "Smoke Testing Selenium on QA Environment"
+		    }
+        }
+		stage('NF Tests: QA Environment') {
+            steps {
+                echo "Testing on QA Environment"
+		    }
+        }
+		stage('Deploy on UAT : Websphere Server') {
+            steps {
+                echo "Deploy on UAT Environment"
+		    }
+        }
+		stage('Functional Test: Selenium : UAT Environment') {
+            steps {
+                echo "Functional Selenium Testing on UAT Environment"
+		    }
+        }
+		stage('NF Tests: UAT Environment') {
+            steps {
+                echo "NF Testing on UAT Environment"
+		    }
+        }
+	    stage('Notify:- Stakeholders (SMS/Email)') {
+            steps {
+				echo "send email and SMS texts"
+            }
+        }     
 
     }
     catch (err) {
