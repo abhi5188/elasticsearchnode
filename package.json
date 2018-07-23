@@ -17,7 +17,7 @@
     "nodemon": "^1.17.3",
     "redis": "^2.8.0",
     "request": "2.85.0",
-    "xml-reader": "^2.4.3"
+    "xml-reader": "^2.4.3",
 	"express":"4.16.3",
 	"properties-reader":"0.0.16"
   }
