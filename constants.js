@@ -1,4 +1,4 @@
-const PropertiesFilePath = "D:/elasticsearchnode/properties.ini";
+const PropertiesFilePath = "./properties.ini";
 
 const Headers = "Access-Control-Allow-Origin,Access-Control-Allow-Headers,X-Requested-With,X-Auth-Token,Content-Type, Content-Length, Origin,Accept, Access-Control-Request-Method, Access-Control-Request-Headers";
 
