@@ -4,7 +4,7 @@
   "description": "This is a nodejs application to dynamically trigger elasticsearch queries",
   "main": "userManagement.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node userManagement.js"
   },
   "keywords": [
     "nodejs"
